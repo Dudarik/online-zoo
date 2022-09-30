@@ -10,21 +10,21 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__wrapper">
-          <a href="/" class="logo__link">
+        <div class="header__wrapper block__wrapper">
+          <a href="../main/" class="logo__link">
             <div class="logo"><h1 class="no-visible">Petstory online</h1></div>
           </a>
           <nav class="main-menu">
             <ul class="menu">
               <li class="menu__item">
-                <a href="/" class="menu__link_backlight">About</a>
+                <a href="../main/" class="menu__link">About</a>
               </li>
               <li class="menu__item"><a href="#" class="menu__link">Map</a></li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Zoos</a>
               </li>
               <li class="menu__item">
-                <a href="/pages/donate/" class="menu__link">Donate</a>
+                <a href="" class="menu__link_backlight">Donate</a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Contact us</a>
@@ -44,14 +44,14 @@
     <main class="main">
       <section class="donate__watch-you-animal">
         <div class="container">
-          <div class="donate__watch-animal__wrapper"></div>
+          <div class="donate__watch-animal__wrapper block__wrapper"></div>
         </div>
       </section>
       <section class="donate__pick-and-feed">
         <div class="container">
-          <div class="donate__pick-and-feed__wrapper">
-            <div class="donate__title">
-              <h3>
+          <div class="donate__pick-and-feed__wrapper block__wrapper">
+            <div class="donate-title__wrapper">
+              <h3 class="donate__subtitle">
                 THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
               </h3>
               <p class=".paragraph-lh-140 donate__pick-and-feed__p1">
@@ -65,20 +65,22 @@
                 a gift today – no matter what size – to help us sustain our
                 mission.
               </p>
-              <h3 class="donate__subtitle">Donation Information</h3>
+              <h3 class="donate__subtitle_orange">Donation Information</h3>
             </div>
             <div class="pick-and-feed__content">
               <h2 class="pick-and-feed__title">Pick and feed a friend</h2>
               <div class="pick-and-feed__content-wrapper">
-                <p>
+                <p class="pick-and-feed__description">
                   We know the animals bring you joy, and in these extraordinary
                   times, we’re glad.
                 </p>
 
                 <div class="donation-animal__wrapper">
                   <div class="days-count__wrapper">
-                    <div class="count">4</div>
-                    <p>Panda diet for the day.</p>
+                    <div class="count__day">4</div>
+                    <p class="count__description paragraph-lh-140">
+                      Panda diet for the day.
+                    </p>
                   </div>
 
                   <div class="donation__multiplay">
@@ -97,128 +99,117 @@
                 </div>
                 <form action="submit">
                   <div class="donation-amount__wrapper">
-                    <div class="paragraph-lh-140 amount__p">Amount</div>
-
-                    <div class="amount-range__wrapper">
-                      <div class="amount__pbar">
-                        <div class="amount__pbar-line">
+                    <div class="donation-amount__title">Amount</div>
+                    <div class="donation-amount__main">
+                      <div class="donation-amount__pbar">
+                        <div class="donation-amount__pbar-midline"></div>
+                      </div>
+                      <div class="radio-buttons__wrapper">
+                        <div class="radio__wrapper">
                           <input
-                            class="amount__radio"
+                            class="radio-button__custom"
                             type="radio"
-                            name="amountcount"
-                            id="amountcount_1"
+                            id="dollar_1"
+                            name="dollars"
+                            value="5000"
                           />
-                          <label
-                            for="amountcount_1"
-                            class="amount__label"
-                          ></label>
-
+                          <label class="label__radio" for="dollar_1"></label>
+                          <label class="dollar__label" for="dollar_1">
+                            <div class="radio-button__count">$5000</div>
+                          </label>
+                        </div>
+                        <div class="radio__wrapper">
                           <input
-                            class="amount__radio"
+                            class="radio-button__custom"
                             type="radio"
-                            name="amountcount"
-                            id="amountcount_2"
+                            id="dollar_2"
+                            name="dollars"
+                            value="2000"
                           />
-                          <label
-                            for="amountcount_2"
-                            class="amount__label"
-                          ></label>
-
+                          <label class="label__radio" for="dollar_2"></label>
+                          <label class="dollar__label" for="dollar_2">
+                            <div class="radio-button__count">$2000</div>
+                          </label>
+                        </div>
+                        <div class="radio__wrapper">
                           <input
-                            class="amount__radio"
+                            class="radio-button__custom"
                             type="radio"
-                            name="amountcount"
-                            id="amountcount_3"
+                            id="dollar_3"
+                            name="dollars"
+                            value="1000"
                             checked
                           />
-                          <label
-                            for="amountcount_3"
-                            class="amount__label"
-                          ></label>
-
-                          <input
-                            class="amount__radio"
-                            type="radio"
-                            name="amountcount"
-                            id="amountcount_4"
-                          />
-                          <label
-                            for="amountcount_4"
-                            class="amount__label"
-                          ></label>
-
-                          <input
-                            class="amount__radio"
-                            type="radio"
-                            name="amountcount"
-                            id="amountcount_5"
-                          />
-                          <label
-                            for="amountcount_5"
-                            class="amount__label"
-                          ></label>
-
-                          <input
-                            class="amount__radio"
-                            type="radio"
-                            name="amountcount"
-                            id="amountcount_6"
-                          />
-                          <label
-                            for="amountcount_6"
-                            class="amount__label"
-                          ></label>
-
-                          <input
-                            class="amount__radio"
-                            type="radio"
-                            name="amountcount"
-                            id="amountcount_7"
-                          />
-                          <label
-                            for="amountcount_7"
-                            class="amount__label"
-                          ></label>
-
-                          <input
-                            class="amount__radio"
-                            type="radio"
-                            name="amountcount"
-                            id="amountcount_8"
-                          />
-                          <label
-                            for="amountcount_8"
-                            class="amount__label"
-                          ></label>
+                          <label class="label__radio" for="dollar_3"></label>
+                          <label class="dollar__label" for="dollar_3">
+                            <div class="radio-button__count">$1000</div>
+                          </label>
                         </div>
-                      </div>
-                      <div class="amount__fix">
-                        <label for="amountcount_1" class="amount__text"
-                          >$5000</label
-                        >
-                        <label for="amountcount_2" class="amount__text"
-                          >$2000</label
-                        >
-                        <label
-                          for="amountcount_3"
-                          class="amount__text amount__checked"
-                          >$1000</label
-                        >
-                        <label for="amountcount_4" class="amount__text"
-                          >$500</label
-                        >
-                        <label for="amountcount_5" class="amount__text"
-                          >$250</label
-                        >
-                        <label for="amountcount_6" class="amount__text"
-                          >$100</label
-                        >
-                        <label for="amountcount_7" class="amount__text"
-                          >$50</label
-                        >
-                        <label for="amountcount_8" class="amount__text"
-                          >$25</label
-                        >
+                        <div class="radio__wrapper">
+                          <input
+                            class="radio-button__custom"
+                            type="radio"
+                            id="dollar_4"
+                            name="dollars"
+                            value="500"
+                          />
+                          <label class="label__radio" for="dollar_4"></label>
+                          <label class="dollar__label" for="dollar_4">
+                            <div class="radio-button__count">$500</div>
+                          </label>
+                        </div>
+                        <div class="radio__wrapper">
+                          <input
+                            class="radio-button__custom"
+                            type="radio"
+                            id="dollar_5"
+                            name="dollars"
+                            value="250"
+                          />
+                          <label class="label__radio" for="dollar_5"></label>
+                          <label class="dollar__label" for="dollar_5">
+                            <div class="radio-button__count">$250</div>
+                          </label>
+                        </div>
+                        <div class="radio__wrapper">
+                          <input
+                            class="radio-button__custom"
+                            type="radio"
+                            id="dollar_6"
+                            name="dollars"
+                            value="100"
+                          />
+                          <label class="label__radio" for="dollar_6"></label>
+                          <label class="dollar__label" for="dollar_6">
+                            <div class="radio-button__count">$100</div>
+                          </label>
+                        </div>
+                        <div class="radio__wrapper">
+                          <input
+                            class="radio-button__custom"
+                            type="radio"
+                            id="dollar_7"
+                            name="dollars"
+                            value="50"
+                          />
+                          <label class="label__radio" for="dollar_7"></label>
+                          <label class="dollar__label" for="dollar_7">
+                            <div class="radio-button__count">$50</div>
+                          </label>
+                        </div>
+                        <div class="radio__wrapper">
+                          <input
+                            class="radio-button__custom"
+                            type="radio"
+                            id="dollar_8"
+                            name="dollars"
+                            value="25"
+                          />
+                          <label class="label__radio" for="dollar_8"></label>
+                          <label class="dollar__label" for="dollar_8">
+                            <div class="radio-button__count">$25</div>
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -229,6 +220,8 @@
                         placeholder="Another amount"
                         type="number"
                         class="amount__input"
+                        maxlength="4"
+                        oninput="this.value = this.value.slice(0, this.maxLength);"
                         min="0"
                         max="9999"
                       />
@@ -283,81 +276,78 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__wrapper">
-          <div class="social-media">
-            <a href="/" class="logo__link logo__link_down">
+        <div class="footer__wrapper block__wrapper">
+          <div class="footer-logo__wrapper">
+            <a href="../main/" class="logo__link logo__link_down">
               <div class="logo"></div>
             </a>
-
-            <!-- <button class="btn btn__main btn__donate">
+          </div>
+          <!-- <button class="btn btn__main btn__donate">
               donate for volunteers
             </button> -->
-
-            <a href="/" class="btn btn__main btn__donate"
+          <div class="footer-btn__wrapper">
+            <a href="../donate/" class="btn btn__main btn__donate"
               >donate for volunteers</a
             >
-
-            <div class="social-media__links">
-              <a
-                class="social-media__link"
-                target="_blank"
-                href="http://fb.com"
-              >
-                <div class="social-media__icon">
-                  <img
-                    src="../../assets/icons/social_icons/faceboock_icon.svg"
-                    alt="facbook"
-                  />
-                </div>
-                Facebook</a
-              >
-
-              <a
-                class="social-media__link"
-                target="_blank"
-                href="http://twitter.com"
-              >
-                <div class="social-media__icon">
-                  <img
-                    src="../../assets/icons/social_icons/twitter_icon.svg"
-                    alt="twitter"
-                  />
-                </div>
-                Twitter</a
-              >
-              <a
-                class="social-media__link"
-                target="_blank"
-                href="http://instagram.com"
-              >
-                <div class="social-media__icon">
-                  <img
-                    src="../../assets/icons/social_icons/instagram_icon.svg"
-                    alt="instagram"
-                  />
-                </div>
-                Instagram</a
-              >
-
-              <a
-                class="social-media__link"
-                target="_blank"
-                href="http://youtube.com"
-              >
-                <div class="social-media__icon">
-                  <img
-                    src="../../assets/icons/social_icons/youtube_icon.svg"
-                    alt="youtube"
-                  />
-                </div>
-                YouTube</a
-              >
-            </div>
           </div>
-          <div class="footer__menu">
+
+          <div class="social-media-links__wrapper">
+            <a class="social-media__link" target="_blank" href="http://fb.com">
+              <div class="social-media__icon">
+                <img
+                  src="../../assets/icons/social_icons/faceboock_icon.svg"
+                  alt="facbook"
+                />
+              </div>
+              Facebook</a
+            >
+
+            <a
+              class="social-media__link"
+              target="_blank"
+              href="http://twitter.com"
+            >
+              <div class="social-media__icon">
+                <img
+                  src="../../assets/icons/social_icons/twitter_icon.svg"
+                  alt="twitter"
+                />
+              </div>
+              Twitter</a
+            >
+            <a
+              class="social-media__link"
+              target="_blank"
+              href="http://instagram.com"
+            >
+              <div class="social-media__icon">
+                <img
+                  src="../../assets/icons/social_icons/instagram_icon.svg"
+                  alt="instagram"
+                />
+              </div>
+              Instagram</a
+            >
+
+            <a
+              class="social-media__link"
+              target="_blank"
+              href="http://youtube.com"
+            >
+              <div class="social-media__icon">
+                <img
+                  src="../../assets/icons/social_icons/youtube_icon.svg"
+                  alt="youtube"
+                />
+              </div>
+              YouTube</a
+            >
+          </div>
+
+          <div class="footer-menu__wrapper">
             <ul class="menu">
               <li class="menu__item">
-                <a href="/" class="menu__link_backlight">About</a>
+                <a href="../main/" class="menu__link_backlight">About</a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Map</a>
@@ -370,7 +360,7 @@
               </li>
             </ul>
           </div>
-          <div class="subscribe">
+          <div class="subscribe__wrapper">
             <div class="subtitle">Subscribe to our news</div>
             <form
               action="submit"
@@ -390,16 +380,16 @@
                 Submit
               </button>
             </form>
-            <div class="copyright">
-              <div class="subtitle">
-                <a
-                  href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
-                  class="copyright__link"
-                >
-                  Designed by Alisa Samborskaya<br />&copy;RSSchool & ©Yem
-                  Digital 2021
-                </a>
-              </div>
+          </div>
+          <div class="copyright__wrapper">
+            <div class="subtitle">
+              <a
+                href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+                class="copyright__link"
+              >
+                Designed by Alisa Samborskaya<br />&copy;RSSchool & ©Yem Digital
+                2021
+              </a>
             </div>
           </div>
         </div>

@@ -4,47 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
     <title>Online Zoo</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__wrapper">
-          <a href="/" class="logo__link">
+        <div class="header__wrapper block__wrapper">
+          <a href="../main/" class="logo__link">
             <div class="logo"><h1 class="no-visible">Petstory online</h1></div>
           </a>
           <nav class="main-menu">
+            <div class="menu__burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- <div className='toggle_menu__overlay' onClick={() => setIsActive(false)}>
+        <div className='toggle_menu__content'>
+
+        </div>
+      </div> -->
+
             <ul class="menu">
               <li class="menu__item">
-                <a href="/" class="menu__link_backlight">About</a>
+                <a href="" class="menu__link_backlight">About</a>
               </li>
               <li class="menu__item"><a href="#" class="menu__link">Map</a></li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Zoos</a>
               </li>
               <li class="menu__item">
-                <a href="/pages/donate/" class="menu__link">Donate</a>
+                <a href="../donate/" class="menu__link">Donate</a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Contact us</a>
               </li>
+              <li class="menu__item">
+                <a
+                  href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+                  class="menu__link"
+                  >Designed by &copy;</a
+                >
+              </li>
             </ul>
           </nav>
-          <div class="desinger">
+          <!-- <div class="desinger">
             <a
               href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
               class="menu__link"
               >Designed by &copy;</a
             >
-          </div>
+          </div> -->
         </div>
       </div>
     </header>
     <main class="main">
       <section class="watch-you-animal">
         <div class="container">
-          <div class="watch-animal__wrapper">
+          <div class="watch-animal__wrapper block__wrapper">
             <div class="watch-animal__title">
               Watch<br />your<br /><span>favorite</span><br />animal<br />online
             </div>
@@ -55,18 +73,45 @@
         </div>
       </section>
       <section class="backstage">
-        <img
-          src="./assets/images/backstage/flower_foto1.png"
+        <picture>
+          <source
+            srcset="../../assets/images/backstage/flower_foto1.png"
+            media="(min-width: 1300px)"
+          />
+          <source
+            srcset="../../assets/images/tablet/backstage/flower_foto1.png"
+            media="(min-width: 640px)"
+          />
+          <img class="flower-foto" src="https://via.placeholder.com/320" />
+        </picture>
+        <!-- <img
+          src="../../assets/images/backstage/flower_foto1.png"
           alt="flower foto"
           class="flower-foto"
-        />
+        /> -->
         <div class="container">
-          <div class="backstage__wrapper">
-            <img
-              src="./assets/images/backstage/bamboo-cap.png"
+          <div class="backstage__wrapper block__wrapper">
+            <picture>
+              <source
+                srcset="../../assets/images/backstage/bamboo-cap.png"
+                media="(min-width: 1300px)"
+              />
+              <source
+                srcset="
+                  ../../assets/images/small_desktop/backstage/bamboo-cap.png
+                "
+                media="(min-width: 641px)"
+              />
+              <img
+                class="backstage-picture"
+                src="https://via.placeholder.com/320"
+              />
+            </picture>
+            <!-- <img
+              src="../../assets/images/backstage/bamboo-cap.png"
               alt="man in bamboo cap"
               class="backstage-picture"
-            />
+            /> -->
             <div class="backstage-description">
               <h2>The Backstage of the Wilderness World.</h2>
               <p class="paragraph-lh-130">
@@ -87,18 +132,48 @@
         </div>
       </section>
       <section class="pets">
-        <img
-          src="./assets/images/pets/palm_foto.png"
+        <picture>
+          <source
+            srcset="../../assets/images/pets/palm_foto.png"
+            media="(min-width: 1500px)"
+          />
+          <source
+            srcset="../../assets/images/small_desktop/pets/palm_foto.png"
+            media="(min-width: 999px)"
+          />
+          <source
+            srcset="../../assets/images/tablet/pets/palm_foto.png"
+            media="(min-width: 639px)"
+          />
+          <img class="pets__palm" src="https://via.placeholder.com/320" />
+        </picture>
+        <picture>
+          <source
+            srcset="../../assets/images/pets/strelitzia.png"
+            media="(min-width: 1500px)"
+          />
+          <source
+            srcset="../../assets/images/small_desktop/pets/strelitzia.png"
+            media="(min-width: 999px)"
+          />
+          <source
+            srcset="../../assets/images/tablet/pets/strelitzia.png"
+            media="(min-width: 639px)"
+          />
+          <img class="pets__strelitzia" src="https://via.placeholder.com/320" />
+        </picture>
+        <!-- <img
+          src="../../assets/images/pets/palm_foto.png"
           alt="Palm photo"
           class="pets__palm"
-        />
-        <img
-          src="./assets/images/pets/strelitzia.png"
+        /> -->
+        <!-- <img
+          src="../../assets/images/pets/strelitzia.png"
           alt="Strelitzia photo"
           class="pets__strelitzia"
-        />
+        /> -->
         <div class="container">
-          <div class="pets_wrapper">
+          <div class="pets_wrapper block__wrapper">
             <div class="pets__slider">
               <div class="slider">
                 <button class="btn btn__round slider-button__left">
@@ -135,158 +210,312 @@
                 </button>
                 <div class="slider__view">
                   <div class="slider__cards">
-                    <div class="slider__card">
+                    <div class="slider__card slider__card_1">
                       <div class="card-img__wrapper">
-                        <img
-                          src="./assets/images/pets/slider/giant_pandas.png"
+                        <picture>
+                          <source
+                            srcset="
+                              ../../assets/images/pets/slider/giant_pandas.png
+                            "
+                            media="(min-width: 1599px)"
+                          />
+                          <source
+                            srcset="
+                              ../../assets/images/small_desktop/pets/slider/giant_pandas.png
+                            "
+                            media="(min-width: 999px)"
+                          />
+                          <source
+                            srcset="
+                              ../../assets/images/tablet/pets/slider/giant_pandas.png
+                            "
+                            media="(min-width: 639px)"
+                          />
+                          <img
+                            src="https://via.placeholder.com/320"
+                            class="card_image"
+                          />
+                        </picture>
+                        <!-- <img
+                          src="../../assets/images/pets/slider/giant_pandas.png"
                           alt="Giant pandas"
                           class="card_image"
-                        />
+                        /> -->
                       </div>
+
                       <!-- <div class="card__text-wrapper"> -->
                       <div class="card__text">
                         <div class="card__title">giant Pandas</div>
-                        <div class="small-paragraph">
+                        <div class="small-paragraph card__sub-title">
                           Native to Southwest China
                         </div>
                         <!-- </div> -->
                       </div>
+
                       <img
-                        src="./assets/icons/cards_icons/banana-bamboo_icon.svg"
+                        src="../../assets/icons/cards_icons/banana-bamboo_icon.svg"
                         alt="Banana and bamboo"
                         class="title__icon"
                       />
                     </div>
-                    <div class="slider__card">
+                    <div class="slider__card slider__card_2">
                       <div class="card-img__wrapper">
-                        <img
-                          src="./assets/images/pets/slider/two-toed_sloth.png"
+                        <picture>
+                          <source
+                            srcset="
+                              ../../assets/images/pets/slider/two-toed_sloth.png
+                            "
+                            media="(min-width: 1599px)"
+                          />
+                          <source
+                            srcset="
+                              ../../assets/images/small_desktop/pets/slider/two-toed_sloth.png
+                            "
+                            media="(min-width: 641px)"
+                          />
+                          <img
+                            class="card_image"
+                            src="https://via.placeholder.com/320"
+                          />
+                        </picture>
+                        <!-- <img
+                          src="../../assets/images/pets/slider/two-toed_sloth.png"
                           alt="Two-toed Sloth"
                           class="card_image"
-                        />
+                        /> -->
                       </div>
                       <!-- <div class="card__text-wrapper"> -->
                       <div class="card__text">
                         <div class="card__title">Two-toed Sloth</div>
-                        <div class="small-paragraph">
+                        <div class="small-paragraph card__sub-title">
                           Mesoamerica, South America
                         </div>
                         <!-- </div> -->
                       </div>
                       <img
-                        src="./assets/icons/cards_icons/banana-bamboo_icon.svg"
+                        src="../../assets/icons/cards_icons/banana-bamboo_icon.svg"
                         alt="Banana and bamboo"
                         class="title__icon"
                       />
                     </div>
-                    <div class="slider__card">
+                    <div class="slider__card slider__card_3">
                       <div class="card-img__wrapper">
-                        <img
-                          src="./assets/images/pets/slider/eagle.png"
-                          alt="Giant pandas"
+                        <picture>
+                          <source
+                            srcset="../../assets/images/pets/slider/eagles.png"
+                            media="(min-width: 1599px)"
+                          />
+                          <source
+                            srcset="
+                              ../../assets/images/small_desktop/pets/slider/eagles.png
+                            "
+                            media="(min-width: 999px)"
+                          />
+                          <source
+                            srcset="
+                              ../../assets/images/tablet/pets/slider/eagles.png
+                            "
+                            media="(min-width: 639px)"
+                          />
+                          <img
+                            class="card_image"
+                            src="https://via.placeholder.com/320"
+                          />
+                        </picture>
+                        <!-- <img
+                          src="../../assets/images/pets/slider/eagle.png"
+                          alt="Eagles"
                           class="card_image"
-                        />
+                        /> -->
                       </div>
                       <!-- <div class="card__text-wrapper"> -->
                       <div class="card__text">
                         <div class="card__title">Eagles</div>
-                        <div class="small-paragraph">
+                        <div class="small-paragraph card__sub-title">
                           Native to South America
                         </div>
                         <!-- </div> -->
                       </div>
                       <img
-                        src="./assets/icons/cards_icons/meet-fish_icon.svg"
+                        src="../../assets/icons/cards_icons/meet-fish_icon.svg"
                         alt="Meet and fish"
                         class="title__icon"
                       />
                     </div>
-                    <div class="slider__card">
+                    <div class="slider__card slider__card_4">
                       <div class="card-img__wrapper">
-                        <img
-                          src="./assets/images/pets/slider/cheetahs.png"
+                        <picture>
+                          <source
+                            srcset="
+                              ../../assets/images/pets/slider/cheetahs.png
+                            "
+                            media="(min-width: 1599px)"
+                          />
+                          <source
+                            srcset="
+                              ../../assets/images/small_desktop/pets/slider/cheetahs.png
+                            "
+                            media="(min-width: 641px)"
+                          />
+                          <img
+                            class="card_image"
+                            src="https://via.placeholder.com/320"
+                          />
+                        </picture>
+                        <!-- <img
+                          src="../../assets/images/pets/slider/cheetahs.png"
                           alt="Cheetahs"
                           class="card_image"
-                        />
+                        /> -->
                       </div>
                       <!-- <div class="card__text-wrapper"> -->
                       <div class="card__text">
                         <div class="card__title">cheetahs</div>
-                        <div class="small-paragraph">Native to Africa</div>
+                        <div class="small-paragraph card__sub-title">
+                          Native to Africa
+                        </div>
                         <!-- </div> -->
                       </div>
                       <img
-                        src="./assets/icons/cards_icons/meet-fish_icon.svg"
+                        src="../../assets/icons/cards_icons/meet-fish_icon.svg"
                         alt="Meet and fish"
                         class="title__icon"
                       />
                     </div>
-                    <div class="slider__card">
+                    <div class="slider__card slider__card_5">
                       <div class="card-img__wrapper">
-                        <img
-                          src="./assets/images/pets/slider/gorrilas.png"
+                        <picture>
+                          <source
+                            srcset="
+                              ../../assets/images/pets/slider/gorillas.png
+                            "
+                            media="(min-width: 1599px)"
+                          />
+                          <source
+                            srcset="
+                              ../../assets/images/small_desktop/pets/slider/gorillas.png
+                            "
+                            media="(min-width: 999px)"
+                          />
+                          <source
+                            srcset="
+                              ../../assets/images/tablet/pets/slider/gorillas.png
+                            "
+                            media="(min-width: 639px)"
+                          />
+                          <img
+                            class="card_image"
+                            src="https://via.placeholder.com/320"
+                          />
+                        </picture>
+                        <!-- <img
+                          src="../../assets/images/pets/slider/gorrilas.png"
                           alt="Gorillas"
                           class="card_image"
-                        />
+                        /> -->
                       </div>
                       <!-- <div class="card__text-wrapper"> -->
                       <div class="card__text">
                         <div class="card__title">Gorillas</div>
-                        <div class="small-paragraph">Native to Congo</div>
+                        <div class="small-paragraph card__sub-title">
+                          Native to Congo
+                        </div>
                         <!-- </div> -->
                       </div>
                       <img
-                        src="./assets/icons/cards_icons/banana-bamboo_icon.svg"
+                        src="../../assets/icons/cards_icons/banana-bamboo_icon.svg"
                         alt="Banana and bamboo"
                         class="title__icon"
                       />
                     </div>
-                    <div class="slider__card">
+                    <div class="slider__card slider__card_6">
                       <div class="card-img__wrapper">
-                        <img
-                          src="./assets/images/pets/slider/penguins.png"
+                        <picture>
+                          <source
+                            srcset="
+                              ../../assets/images/pets/slider/penguins.png
+                            "
+                            media="(min-width: 1599px)"
+                          />
+                          <source
+                            class="card_image"
+                            srcset="
+                              ../../assets/images/small_desktop/pets/slider/penguins.png
+                            "
+                            media="(min-width: 641px)"
+                          />
+                          <img
+                            src="https://via.placeholder.com/320"
+                            class="card_image"
+                          />
+                        </picture>
+                        <!-- <img
+                          src="../../assets/images/pets/slider/penguins.png"
                           alt="Penguins"
                           class="card_image"
-                        />
+                        /> -->
                       </div>
                       <!-- <div class="card__text-wrapper"> -->
                       <div class="card__text">
                         <div class="card__title">Penguins</div>
-                        <div class="small-paragraph">Native to Antarctica</div>
+                        <div class="small-paragraph card__sub-title">
+                          Native to Antarctica
+                        </div>
                         <!-- </div> -->
                       </div>
                       <img
-                        src="./assets/icons/cards_icons/meet-fish_icon.svg"
+                        src="../../assets/icons/cards_icons/meet-fish_icon.svg"
                         alt="Meet and fish"
                         class="title__icon"
                       />
                     </div>
-                    <div class="slider__card">
+                    <div class="slider__card slider__card_7">
                       <div class="card-img__wrapper">
-                        <img
-                          src="./assets/images/pets/slider/empty.png"
+                        <picture class="card_image">
+                          <source
+                            srcset="
+                              ../../assets/images/pets/slider/alligators.png
+                            "
+                            media="(min-width: 1599px)"
+                          />
+                          <source
+                            srcset="
+                              ../../assets/images/small_desktop/pets/slider/alligators.png
+                            "
+                            media="(min-width: 999px)"
+                          />
+                          <source
+                            srcset="
+                              ../../assets/images/tablet/pets/slider/alligators.png
+                            "
+                            media="(min-width: 639px)"
+                          />
+                          <img src="https://via.placeholder.com/320" />
+                        </picture>
+                        <!-- <img
+                          src="../../assets/images/pets/slider/empty.png"
                           alt="Giant pandas"
                           class="card_image"
-                        />
+                        /> -->
                       </div>
                       <!-- <div class="card__text-wrapper"> -->
                       <div class="card__text">
-                        <div class="card__title">giant Pandas</div>
-                        <div class="small-paragraph">
-                          Native to Southwest China
+                        <div class="card__title">Alligators</div>
+                        <div class="small-paragraph card__sub-title">
+                          Native to Southeastern U. S.
                         </div>
                         <!-- </div> -->
                       </div>
                       <img
-                        src="./assets/icons/cards_icons/banana-bamboo_icon.svg"
+                        src="../../assets/icons/cards_icons/meet-fish_icon.svg"
                         alt="Banana and bamboo"
                         class="title__icon"
                       />
                     </div>
-                    <div class="slider__card">
+                    <div class="slider__card slider__card_8">
                       <div class="card-img__wrapper">
                         <img
-                          src="./assets/images/pets/slider/giant_pandas.png"
+                          src="../../assets/images/pets/slider/giant_pandas.png"
                           alt="Giant pandas"
                           class="card_image"
                         />
@@ -294,13 +523,13 @@
                       <!-- <div class="card__text-wrapper"> -->
                       <div class="card__text">
                         <div class="card__title">giant Pandas</div>
-                        <div class="small-paragraph">
+                        <div class="small-paragraph card__sub-title">
                           Native to Southwest China
                         </div>
                         <!-- </div> -->
                       </div>
                       <img
-                        src="./assets/icons/cards_icons/banana-bamboo_icon.svg"
+                        src="../../assets/icons/cards_icons/banana-bamboo_icon.svg"
                         alt="Banana and bamboo"
                         class="title__icon"
                       />
@@ -317,7 +546,7 @@
       </section>
       <section class="pick-and-feed">
         <div class="container">
-          <div class="pick-and-feed__wrapper">
+          <div class="pick-and-feed__wrapper block__wrapper">
             <div class="pick-and-feed__content">
               <h2 class="pick-and-feed__title">Pick and feed a friend</h2>
               <div class="pick-and-feed__text-wrapper">
@@ -336,7 +565,7 @@
                   gift to our
                   <a
                     class="paragraph-lh-130 pick-and-feed__link"
-                    href="/pages/donate/"
+                    href="../donate/"
                     >Emergency Support Fund</a
                   >.
                 </p>
@@ -347,7 +576,7 @@
                   <div class="cards-widget__card">
                     <div class="cards-widget__card-image">
                       <img
-                        src="./assets/icons/pick_and_feed_icons/pay.svg"
+                        src="../../assets/icons/pick_and_feed_icons/pay.svg"
                         alt="Pay with card"
                       />
                     </div>
@@ -356,15 +585,33 @@
                     </div>
                   </div>
                   <div class="cards-widget__card-arrow-right">
-                    <img
-                      src="./assets/icons/pick_and_feed_icons/arrow_right.svg"
+                    <picture>
+                      <source
+                        srcset="
+                          ../../assets/icons/pick_and_feed_icons/arrow_right.svg
+                        "
+                        media="(min-width: 1000px)"
+                      />
+                      <source
+                        srcset="
+                          ../../assets/icons/pick_and_feed_icons/arrow_right_sm.svg
+                        "
+                        media="(min-width: 639px)"
+                      />
+                      <img
+                        class="card__arrow"
+                        src="https://via.placeholder.com/320"
+                      />
+                    </picture>
+                    <!-- <img
+                      src="../../assets/icons/pick_and_feed_icons/arrow_right.svg"
                       alt="arrow right"
-                    />
+                    /> -->
                   </div>
                   <div class="cards-widget__card">
                     <div class="cards-widget__card-image">
                       <img
-                        src="./assets/icons/pick_and_feed_icons/zoo.png"
+                        src="../../assets/icons/pick_and_feed_icons/zoo.png"
                         alt="Pay with card"
                       />
                     </div>
@@ -373,15 +620,33 @@
                     </div>
                   </div>
                   <div class="cards-widget__card-arrow-right">
-                    <img
-                      src="./assets/icons/pick_and_feed_icons/arrow_right.svg"
+                    <picture>
+                      <source
+                        srcset="
+                          ../../assets/icons/pick_and_feed_icons/arrow_right.svg
+                        "
+                        media="(min-width: 1000px)"
+                      />
+                      <source
+                        srcset="
+                          ../../assets/icons/pick_and_feed_icons/arrow_right_sm.svg
+                        "
+                        media="(min-width: 639px)"
+                      />
+                      <img
+                        class="card__arrow"
+                        src="https://via.placeholder.com/320"
+                      />
+                    </picture>
+                    <!-- <img
+                      src="../../assets/icons/pick_and_feed_icons/arrow_right.svg"
                       alt="arrow right"
-                    />
+                    /> -->
                   </div>
                   <div class="cards-widget__card">
                     <div class="cards-widget__card-image">
                       <img
-                        src="./assets/icons/pick_and_feed_icons/monkey.svg"
+                        src="../../assets/icons/pick_and_feed_icons/monkey.svg"
                         alt="Pay with card"
                       />
                     </div>
@@ -399,22 +664,42 @@
         </div>
       </section>
       <section class="testimonials">
-        <img
-          src="./assets/images/testimonials/leav_foto.png"
+        <picture>
+          <source
+            srcset="../../assets/images/testimonials/leav_foto.png"
+            media="(min-width: 1500px)"
+          />
+          <source
+            srcset="
+              ../../assets/images/small_desktop/testimonials/leav_foto.png
+            "
+            media="(min-width: 999px)"
+          />
+          <source
+            srcset="../../assets/images/tablet/testimonials/leav_foto.png"
+            media="(min-width: 640px)"
+          />
+          <img
+            class="testimonials__leaf"
+            src="https://via.placeholder.com/320"
+          />
+        </picture>
+        <!-- <img
+          src="../../assets/images/testimonials/leav_foto.png"
           alt="leaf"
           class="testimonials__leaf"
-        />
+        /> -->
         <div class="container">
-          <div class="testimonials__wrapper">
+          <div class="testimonials__wrapper block__wrapper">
             <h3 class="testimonials__title">Testimonials</h3>
             <div class="testimonials__slider">
               <div class="slider">
                 <div class="slider__cards">
-                  <div class="slider__card">
+                  <div class="slider__card slider_card_1">
                     <div class="card__header">
                       <div class="user-avatar">
                         <img
-                          src="./assets/images/testimonials/avatars/no_avatar.png"
+                          src="../../assets/images/testimonials/avatars/no_avatar.png"
                           alt="no avatar"
                           width="37"
                           height="37"
@@ -447,11 +732,11 @@
                       for animals.
                     </div>
                   </div>
-                  <div class="slider__card">
+                  <div class="slider__card slider_card_2">
                     <div class="card__header">
                       <div class="user-avatar">
                         <img
-                          src="./assets/images/testimonials/avatars/avatar1.png"
+                          src="../../assets/images/testimonials/avatars/avatar1.png"
                           alt="Oskar Samborsky"
                           width="37"
                           height="37"
@@ -489,11 +774,11 @@
                       love for animals.
                     </p>
                   </div>
-                  <div class="slider__card">
+                  <div class="slider__card slider_card_3">
                     <div class="card__header">
                       <div class="user-avatar">
                         <img
-                          src="./assets/images/testimonials/avatars/avatar2.png"
+                          src="../../assets/images/testimonials/avatars/avatar2.png"
                           alt="Fredericka Michelin"
                           width="37"
                           height="37"
@@ -529,11 +814,11 @@
                       zoo is one jf the ways to instill a love for animals.
                     </p>
                   </div>
-                  <div class="slider__card">
+                  <div class="slider__card slider_card_4">
                     <div class="card__header">
                       <div class="user-avatar">
                         <img
-                          src="./assets/images/testimonials/avatars/avatar3.png"
+                          src="../../assets/images/testimonials/avatars/avatar3.png"
                           alt="Mila Riksha"
                           width="37"
                           height="37"
@@ -569,42 +854,79 @@
                       instill a love for animals.
                     </p>
                   </div>
-                  <div class="slider__card">
+                  <div class="slider__card slider_card_5">
                     <div class="card__header">
                       <div class="user-avatar">
                         <img
-                          src="./assets/images/testimonials/avatars/no_avatar.png"
-                          alt="no avatar"
+                          src="../../assets/images/testimonials/avatars/avatar3.png"
+                          alt="Mila Riksha"
                           width="37"
                           height="37"
                         />
                       </div>
                       <div class="user-info">
-                        <div class="user-name">Michael John</div>
+                        <div class="user-name">Oska Samborska</div>
                         <div class="user__location-time">
                           <span class="user__location small-paragraph"
                             >Local Austria</span
                           >
                           <span class="separator small-paragraph"> • </span>
                           <span class="date-time__post small-paragraph"
-                            >Today</span
+                            >Yesterday</span
                           >
                         </div>
                       </div>
                     </div>
-                    <div class="card__text small-paragraph">
-                      The best online zoo I’ve met. My son delighted very much
-                      ljves to watch gouillas. Online zoo is one jf the ways to
-                      instill a love for animals.The best online zoo I’ve met.
-                      My son delighted very much ljves to watch gouillas. Online
-                      zoo is one jf the ways to instill a love for animals.
-                      <br />The best online zoo I’ve met. My son delighted very
-                      much ljves to watch gouillas. Online zoo is one jf the
-                      ways to instill a love for animals.The best online zoo
+                    <p class="card__text small-paragraph">
+                      &nbsp;Online zoo is one jf the ways to instill a love for
+                      animals.The best online zoo I’ve met. My son delighted
+                      very much ljves to watch gouillas. Online zoo is one jf
+                      the ways to instill a love for animals.The best online zoo
                       I’ve met. My son delighted very much ljves to watch
-                      gouillas. Online zoo is one jf the ways to instill a love
-                      for animals.
+                      gouillas. <br />The best online zoo I’ve met. My son
+                      delighted very much ljves to watch gouillas. Online zoo is
+                      one jf the ways to instill a love for animals.The best
+                      online zoo I’ve met. My son delighted very much ljves to
+                      watch gouillas. Online zoo is one jf the ways to instill a
+                      love for animals.
+                    </p>
+                  </div>
+                  <div class="slider__card slider_card_6">
+                    <div class="card__header">
+                      <div class="user-avatar">
+                        <img
+                          src="../../assets/images/testimonials/avatars/avatar2.png"
+                          alt="Fredericka Michelin"
+                          width="37"
+                          height="37"
+                        />
+                      </div>
+                      <div class="user-info">
+                        <div class="user-name">Fredericka Michelin</div>
+                        <div class="user__location-time">
+                          <span class="user__location small-paragraph"
+                            >Local Austria</span
+                          >
+                          <span class="separator small-paragraph"> • </span>
+                          <span class="date-time__post small-paragraph"
+                            >Yesterday</span
+                          >
+                        </div>
+                      </div>
                     </div>
+                    <p class="card__text small-paragraph">
+                      &nbsp;My son delighted very much ljves to watch gouillas.
+                      Online zoo is one jf the ways to instill a love for
+                      animals.The best online zoo I’ve met. My son delighted
+                      very much ljves to watch gouillas. Online zoo is one jf
+                      the ways to instill a love for animals.The best online zoo
+                      I’ve met. <br />The best online zoo I’ve met. My son
+                      delighted very much ljves to watch gouillas. Online zoo is
+                      one jf the ways to instill a love for animals.The best
+                      online zoo I’ve met. My son delighted very much ljves to
+                      watch gouillas. Online zoo is one jf the ways to instill a
+                      love for animals.
+                    </p>
                   </div>
                 </div>
                 <div class="slider__controls">
@@ -634,80 +956,78 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__wrapper">
-          <div class="social-media">
-            <a href="/" class="logo__link logo__link_down">
-              <div class="logo"></div>
+        <div class="footer__wrapper block__wrapper">
+          <div class="footer-logo__wrapper">
+            <a href="../main/" class="logo__link logo__link_down">
+              <div class="logo footer__logo"></div>
             </a>
-
-            <!-- <button class="btn btn__main btn__donate">
+          </div>
+          <!-- <button class="btn btn__main btn__donate">
               donate for volunteers
             </button> -->
-            <a href="./pages/donate/" class="btn btn__main btn__donate"
+          <div class="footer-btn__wrapper">
+            <a href="../donate/" class="btn btn__main btn__donate"
               >donate for volunteers</a
             >
-
-            <div class="social-media__links">
-              <a
-                class="social-media__link"
-                target="_blank"
-                href="http://fb.com"
-              >
-                <div class="social-media__icon">
-                  <img
-                    src="./assets/icons/social_icons/faceboock_icon.svg"
-                    alt="facbook"
-                  />
-                </div>
-                Facebook</a
-              >
-
-              <a
-                class="social-media__link"
-                target="_blank"
-                href="http://twitter.com"
-              >
-                <div class="social-media__icon">
-                  <img
-                    src="./assets/icons/social_icons/twitter_icon.svg"
-                    alt="twitter"
-                  />
-                </div>
-                Twitter</a
-              >
-              <a
-                class="social-media__link"
-                target="_blank"
-                href="http://instagram.com"
-              >
-                <div class="social-media__icon">
-                  <img
-                    src="./assets/icons/social_icons/instagram_icon.svg"
-                    alt="instagram"
-                  />
-                </div>
-                Instagram</a
-              >
-
-              <a
-                class="social-media__link"
-                target="_blank"
-                href="http://youtube.com"
-              >
-                <div class="social-media__icon">
-                  <img
-                    src="./assets/icons/social_icons/youtube_icon.svg"
-                    alt="youtube"
-                  />
-                </div>
-                YouTube</a
-              >
-            </div>
           </div>
-          <div class="footer__menu">
-            <ul class="menu">
+
+          <div class="social-media-links__wrapper">
+            <a class="social-media__link" target="_blank" href="http://fb.com">
+              <div class="social-media__icon">
+                <img
+                  src="../../assets/icons/social_icons/faceboock_icon.svg"
+                  alt="facbook"
+                />
+              </div>
+              Facebook</a
+            >
+
+            <a
+              class="social-media__link"
+              target="_blank"
+              href="http://twitter.com"
+            >
+              <div class="social-media__icon">
+                <img
+                  src="../../assets/icons/social_icons/twitter_icon.svg"
+                  alt="twitter"
+                />
+              </div>
+              Twitter</a
+            >
+            <a
+              class="social-media__link"
+              target="_blank"
+              href="http://instagram.com"
+            >
+              <div class="social-media__icon">
+                <img
+                  src="../../assets/icons/social_icons/instagram_icon.svg"
+                  alt="instagram"
+                />
+              </div>
+              Instagram</a
+            >
+
+            <a
+              class="social-media__link"
+              target="_blank"
+              href="http://youtube.com"
+            >
+              <div class="social-media__icon">
+                <img
+                  src="../../assets/icons/social_icons/youtube_icon.svg"
+                  alt="youtube"
+                />
+              </div>
+              YouTube</a
+            >
+          </div>
+
+          <div class="footer-menu__wrapper">
+            <ul class="menu footer__menu">
               <li class="menu__item">
-                <a href="/" class="menu__link_backlight">About</a>
+                <a href="../main/" class="menu__link_backlight">About</a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Map</a>
@@ -720,7 +1040,7 @@
               </li>
             </ul>
           </div>
-          <div class="subscribe">
+          <div class="subscribe__wrapper">
             <div class="subtitle">Subscribe to our news</div>
             <form
               action="submit"
@@ -740,16 +1060,16 @@
                 Submit
               </button>
             </form>
-            <div class="copyright">
-              <div class="subtitle">
-                <a
-                  href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
-                  class="copyright__link"
-                >
-                  Designed by Alisa Samborskaya<br />&copy;RSSchool & ©Yem
-                  Digital 2021
-                </a>
-              </div>
+          </div>
+          <div class="copyright__wrapper">
+            <div class="subtitle">
+              <a
+                href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+                class="copyright__link"
+              >
+                Designed by Alisa Samborskaya<br />&copy;RSSchool & ©Yem Digital
+                2021
+              </a>
             </div>
           </div>
         </div>
